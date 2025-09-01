@@ -16,9 +16,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(0);
     transition:
       background-color $transition-time,
-      translate $transition-time;
+      transform $transition-time;
 
     &:hover {
       cursor: pointer;
