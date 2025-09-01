@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: $gap;
-  padding: $padding;
-  width: calc($day-size * 7 + $border-size * 2 + $gap * 4);
+  padding: 0 $padding;
+  width: calc(7 * $day-size + 6 * $gap);
 
   &__day {
     box-sizing: border-box;
@@ -16,12 +16,12 @@
     justify-content: center;
     align-items: center;
     transition:
-      translate $transition-time,
-      background $transition-time;
+      background-color $transition-time,
+      translate $transition-time;
 
     &:hover {
       cursor: pointer;
-      background: #ffbfcb;
+      background-color: #ffbfcb;
       transform: translateY(-20px);
     }
 
